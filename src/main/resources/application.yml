@@ -1,0 +1,11 @@
+server:
+  port: ${vcap.application.port:8080}
+spring:
+  data:
+    mongodb:
+        port: 27017
+        host: localhost
+        database: customize
+    rest:
+      enable-enum-translation: true
+      base-path: /customize
